@@ -9,7 +9,7 @@ function fetchBooks() {
   return response.json();
 })
 .then(function(json){
-  return renderBooks(json);
+  return json.renderBooks();
 })
 }
 
